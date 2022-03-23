@@ -4,6 +4,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+// import 'bootstrap'; // 引入 bootstrap ts 文件
+
 if (environment.production) {
   enableProdMode();
 }
