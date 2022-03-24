@@ -1,26 +1,12 @@
 <div class="alert alert-success" role="alert">
   A simple danger alert—check it out!
 </div>
-<table class="table-bordered">
-  <tr>
-    <th>name</th>
-    <th>phone</th>
-    <th>age</th>
-  </tr>
-  <tr>
-    <td>张三</td>
-    <td>13398490594</td>
-    <td>33</td>
-  </tr>
-  <tr>
-    <td [colSpan]="colSpan">李四</td>
-    <td>15079049984</td>
-    <td>22</td>
-  </tr>
-</table>
+<section>
+  <button class="btn btn-primary" (click)="showModal=true">show Modal</button>
+  <app-dialog (confirm)="onOnConfirm();" (backDropClick)="onClose();" (hide)="onClose()" [visible]="showModal" title="一个标题"></app-dialog>
+</section>
 
-<span [attr.data-title]="customTitle">一段文字</span>
+<!--<app-sizer [size]="size" (sizeChange)="size = $event"></app-sizer>-->
+<app-sizer [(size)]="size"></app-sizer>
+<label [style.font-size.px]="size">App FontSize: {{size}}px</label>
 
-<p [title]="customTitle">又是一段文字</p>
-
-<img src="{{hero.pic}}" alt="{{hero.name}}">
