@@ -1,12 +1,4 @@
-<div class="alert alert-success" role="alert">
-  A simple danger alert—check it out!
+<div id="app">
+ <app-example></app-example>
 </div>
-<section>
-  <button class="btn btn-primary" (click)="showModal=true">show Modal</button>
-  <app-dialog (confirm)="onOnConfirm();" (backDropClick)="onClose();" (hide)="onClose()" [visible]="showModal" title="一个标题"></app-dialog>
-</section>
-
-<!--<app-sizer [size]="size" (sizeChange)="size = $event"></app-sizer>-->
-<app-sizer [(size)]="size"></app-sizer>
-<label [style.font-size.px]="size">App FontSize: {{size}}px</label>
 

@@ -1,0 +1,7 @@
+<div class="change-child">
+  <h3>这是 child 组件</h3>
+  <p> childName: {{ childName }}</p>
+  <p> arm: {{ arms }}</p>
+  <button class="btn danger" (click)="position='上'">改变位置</button>
+  <app-change-grandson [position]="position"></app-change-grandson>
+</div>

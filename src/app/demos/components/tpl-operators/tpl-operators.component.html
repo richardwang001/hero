@@ -1,0 +1,21 @@
+<section>
+  <h3>管道</h3>
+  title: {{ title }}
+  uppercase title: {{ title | uppercase }}<br>
+  lowercase: {{ title | lowercase }}<br>
+  <p>
+    obj:{{obj}}<br>
+    json obj:{{obj | json}}<br>
+    now: {{ now }} <br>
+    date now: {{ now | date: 'yyyy-MM-dd' }} <br>
+  </p>
+
+  <p>安全导航运算符</p>
+  <p *ngIf="hero">hero name is {{hero?.name}}</p>
+  <p>hero name is {{hero?.name}}</p>
+</section>
+
+<section>
+  <h3>非空断言</h3>
+  <p></p>
+</section>

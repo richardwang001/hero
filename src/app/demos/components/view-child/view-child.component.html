@@ -1,0 +1,30 @@
+<div class="view-child">
+  <div class="box" #box>
+    第一个盒子
+  </div>
+    <div class="box" #box>
+    第二个盒子
+  </div>
+    <div class="box" #box>
+    第三个盒子
+  </div>
+    <div class="box" #box>
+    第四个盒子
+  </div>
+    <div class="box" #box>
+    第五个盒子
+  </div>
+    <div class="box" #box>
+    第六个盒子
+  </div>
+
+  <hr>
+  <button class="bg-primary" (click)="showOneChild=!showOneChild">toggle child one</button>
+  <app-panel></app-panel>
+  <app-panel *ngIf="showOneChild"></app-panel>
+  <app-panel></app-panel>
+  <app-panel></app-panel>
+  <app-panel></app-panel>
+  <app-panel></app-panel>
+  <app-panel #panel></app-panel>
+</div>

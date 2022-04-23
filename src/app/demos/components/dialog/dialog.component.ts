@@ -10,7 +10,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class DialogComponent implements OnInit {
   // show = false;
   @Input('visible') show = false;
-  @Input() title = '';
+  @Input() title = '对话框标题';
   @Input() confirmLabel = '确定';
   @Input() cancelLabel = '取消';
   @Output('hide') closed = new EventEmitter<void>();
